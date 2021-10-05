@@ -8,15 +8,7 @@ window.onload = function () {
         let email = document.getElementById('emailInput').value;
         let order = document.getElementById('orderInput').value;
         console.log(name,email, order);
-
+        // Must be Inside so it could be define
+        document.getElementById('container').innerHTML = `<p> The order from the customer <b> ${name} </b> with the following <b> ${order} </b>, notify by email: <b>${email}</b></p>`
     });
-    document.getElementById('container').innerHTML = getMessage(name,order,email);
 };
-
-function getMessage() {
-    let html = `
-    <article>
-    ${name} ordered: ${order} [${email}]
-  </article>
-  `
-}
