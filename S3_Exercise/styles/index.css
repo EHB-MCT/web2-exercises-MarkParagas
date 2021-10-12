@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  margin: 0px 40px;
+  font-size: 1em;
+}
+
+* {
+  color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
